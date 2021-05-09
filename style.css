@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+/* font-family: 'Big Shoulders Display', cursive;
+font-family: 'Lexend Deca', sans-serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 15px;
+    background: hsl(0, 0%, 95%);
+}
+
+
+h1 { 
+    font-family: 'Big Shoulders Display';
+   color: hsl(0, 0%, 95%)
+}
+
+p {
+    font-family: 'Lexend Deca';
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 1.5;
+  }
+
+h1,
+p,
+span,
+button { 
+    margin-left: 10%;
+    margin-right: 15%;
+    margin-top: 10%;
+}
+
+
+button {
+    height: 40px;
+    width: 150px;
+    border-radius: 24px;
+    -webkit-border-radius: 24px;
+    -moz-border-radius: 24px;
+    -ms-border-radius: 24px;
+    -o-border-radius: 24px;
+    border: none;
+}
+
+.card-1 button { color: hsl(31, 77%, 52%);}
+.card-2 button { color: hsl(184, 100%, 22%);}
+.card-3 button {color: hsl(179, 100%, 13%);}
+
+.card {
+    width: 375px;
+    height: 410px;
+    margin: 0 auto;
+}
+
+.card-1 {
+    background: hsl(31, 77%, 52%);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-top: 50px;
+}
+
+.card-2 {
+    background: hsl(184, 100%, 22%);
+}
+
+.card-3 {
+    background: hsl(179, 100%, 13%) ;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-bottom: 50px;
+}
+
+
+span {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.card-1 span {
+    background: hsl(31, 65%, 43%)
+}
+.card-2 span {
+    background: hsl(184, 84%, 20%);
+}
+.card-3 span {
+    background: hsl(179, 93%, 11%)
+}
+
+i {
+    position: absolute;
+    margin-left: -20.5%;
+    margin-top: 12.5%;
+    display: inline-block;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 200%;
+}
+
+
+@media (min-width: 500px){
+     
+    .card-container {
+        margin: 50px auto;
+        width: 90%;
+    }
+
+    .card {
+        display: inline-block;
+        margin-right: -5px;
+        height: 450px;
+    }
+
+    .card-1 {
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-top-right-radius: 0;
+    }
+
+    .card-3 {
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 0;
+    }
+
+   button { margin-top: 21%;}
+
+    i { 
+        margin-top: 3.5%;
+        margin-left: -5.5%;
+    }
+}
